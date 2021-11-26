@@ -12,8 +12,8 @@ if (isset($_POST['editar'])) {
     $comensales = $_POST['comensales'];
     $image = $_POST['image'];
 
-    $resultado = $mysqli->query("UPDATE plato SET titulo='$titulo', tipo='$tipo', comensales='$comensales' WHERE Plato_id=".$_GET["id"]); 
-    header('location: index.php');
+    $resultado = $mysqli->query("UPDATE plato SET titulo='$titulo', tipo='$tipo', comensales='$comensales', image='$image' WHERE Plato_id=".$_GET["id"]); 
+    header('location: platos.php');
 }
 
 echo 
