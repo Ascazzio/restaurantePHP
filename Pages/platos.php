@@ -11,20 +11,10 @@
 </head>
 
 <body>
-
-<!-- Aqui el usuario puede ingresar, mas abajo debe de tener un boton
-de registro -->
     
 <?php
     require_once( '../functions/header.php');
     cabecera();
-?>
-
-<?php
-
-    require '../functions/login.php';
-    login();
-
 ?>
 
 

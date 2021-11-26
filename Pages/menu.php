@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+<!-- Este es el menu que pueden ver los clientes, con todos los datos de cada plato -->
     
 <!-- navigation and logo area starts-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1">
@@ -47,14 +49,12 @@
 <div class="container">
     <?php
 
-        require '../functions/functions.php';
+        require '../functions/listarPlatos.php';
         listarPlatos(conectar());
 
     ?>
 </div>
-<section id="breakfast" class="p-5">
-    
-</section>
+
 <!--boxes end here-->
 
 <!--Footer-->

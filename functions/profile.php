@@ -16,7 +16,7 @@ $reg=$resultado->fetch_assoc();
                 <td>'.$reg['Nombre'].'</td>   
                 <td>'.$reg['Apellidos'].'</td>   
                 <td>'.$reg['Correo'].'</td>   
-                <td><input type="button" name="editar"value="Editar" onClick=window.location.replace("editar_user.php?id='.$reg['Usuario_ID'].'")></td> 
+                <td><input type="button" name="editar"value="Editar" onClick=window.location.replace("editarUser.php?id='.$reg['Usuario_ID'].'")></td> 
             </tr>
         </table>
         <form action="logout.php" method="get">

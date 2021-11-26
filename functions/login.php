@@ -4,8 +4,6 @@ function login () {
     require '../database/db_conect.php';
     $mysqli = conectar();
 
-    session_start();
-
     if(isset($_POST['login'])){
 
         // 3. Variables $_POST[]

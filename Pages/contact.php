@@ -17,13 +17,6 @@
     cabecera();
 ?>
 
-<?php
-
-    require '../functions/login.php';
-    login();
-
-?>
-
 <!--Contact form and map starts-->
 <section>
     <div class="container p-2">
