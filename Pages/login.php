@@ -12,37 +12,12 @@
 
 <body>
     
-<!-- navigation and logo area starts-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1">
-        <div class="container">
-            <a href="../index.php" class="navbar-brand"> 
-                <img class="img-fluid w-50" src="../images/logo.png" alt=""></a>
-    
-                <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navmenu">
-                
-                <span class="navbar-toggler-icon"></span>
-                </button>
+<?php
+    require_once( './functions/header.php');
+    cabecera();
+?>
 
-        <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"></li>
-                <a href="#about" class="nav-link">ABOUT</a>
-                <li class="nav-item"></li>
-                <a href="./menu.html" class="nav-link">MENU</a>
-                <li class="nav-item"></li>
-                <a href="../Pages/contact.html" class="nav-link">CONTACT</a>
-            </ul>
-        </div>
-        </div>
-    </nav>
-
-<!-- navigation and logo area ends-->
-
-<section id="lunch" class="bg-white text-dark p-5">
+<!-- <section id="lunch" class="bg-white text-dark p-5">
     <div class="container">
         <div class="row align-items*center justify-content-between">
             
@@ -59,7 +34,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 <!-- section of our cooks starts here-->
