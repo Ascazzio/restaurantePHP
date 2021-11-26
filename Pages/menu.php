@@ -11,11 +11,6 @@
 </head>
 
 <body>
-
-<?php
-    require_once( './functions/header.php');
-    cabecera();
-?>
     
 <!-- navigation and logo area starts-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1">

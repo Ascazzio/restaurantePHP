@@ -13,7 +13,7 @@
 <body>
     
 <?php
-    require_once( './functions/header.php');
+    require_once( '../functions/header.php');
     cabecera();
 ?>
 
