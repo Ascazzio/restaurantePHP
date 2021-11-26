@@ -44,6 +44,7 @@
 
 <!-- boxes-->
 
+<div class="container">
 <?php
 
     require '../functions/functions.php';
@@ -51,7 +52,7 @@
     listarPlatos(conectar());
 
 ?>
-
+</div>
 <section id="breakfast" class="p-5">
     
 </section>
