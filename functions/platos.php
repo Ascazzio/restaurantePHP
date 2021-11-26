@@ -6,7 +6,7 @@
 
 <?php
 
-require './database/db_conect.php';
+require '../database/db_conect.php';
 $mysqli = conectar();
 $resultado = $mysqli->query("SELECT Plato_id, titulo FROM plato");
 

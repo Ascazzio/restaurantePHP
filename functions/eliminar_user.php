@@ -1,6 +1,6 @@
 <?php
 
-require './database/db_conect.php';
+require '../database/db_conect.php';
 $mysqli = conectar();
 
 if (isset($_POST['eliminar'])) {

@@ -2,7 +2,7 @@
 
 echo '<h1>Detalle de ' . ($_GET["titulo"]) . '</h1>';
 
-require './database/db_conect.php';
+require '../database/db_conect.php';
 $mysqli = conectar();
 $resultado = $mysqli->query("SELECT * FROM plato WHERE id=".$_GET["id"]);
 $reg=$resultado->fetch_assoc();

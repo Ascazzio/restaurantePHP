@@ -6,7 +6,7 @@
 
 <?php
 
-require './database/db_conect.php';
+require '../database/db_conect.php';
 $mysqli = conectar();
 $resultado = $mysqli->query("SELECT Usuario_ID, Nombre, Apellidos, Correo FROM usuario");
 

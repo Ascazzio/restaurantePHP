@@ -1,6 +1,6 @@
 <?php
 
-require './database/db_conect.php';
+require '../database/db_conect.php';
 $mysqli = conectar();
 
 $resultado = $mysqli->query("SELECT * FROM plato WHERE Plato_id=".$_GET["id"]);

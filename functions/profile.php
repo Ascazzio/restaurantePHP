@@ -4,7 +4,7 @@
 
 <?php
 
-require './database/db_conect.php';
+require '../database/db_conect.php';
 $mysqli = conectar();
 $resultado = $mysqli->query("SELECT * FROM usuario WHERE Usuario_ID=".$_GET["id"]);
 
