@@ -11,20 +11,11 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-
-<!-- Este es el menu que pueden ver los clientes, con todos los datos de cada plato -->
-=======
->>>>>>> ab9c0e641019b355bd79c3fc586d8e3534c4685d
     
 <!-- navigation and logo area starts-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1">
         <div class="container">
-<<<<<<< HEAD
-            <a href="../index.php" class="navbar-brand"> 
-=======
             <a href="../index.html" class="navbar-brand"> 
->>>>>>> ab9c0e641019b355bd79c3fc586d8e3534c4685d
                 <img class="img-fluid w-50" src="../images/logo.png" alt=""></a>
     
                 <button 
@@ -39,13 +30,6 @@
         <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"></li>
-<<<<<<< HEAD
-                <a href="./about.php" class="nav-link">ABOUT</a>
-                <li class="nav-item"></li>
-                <a href="#menu" class="nav-link">MENU</a>
-                <li class="nav-item"></li>
-                <a href="../Pages/contact.php" class="nav-link">CONTACT</a>
-=======
                 <a href="./about.html" class="nav-link">ABOUT</a>
                 <li class="nav-item"></li>
                 <a href="#menu" class="nav-link">MENU</a>
@@ -53,7 +37,6 @@
                 <a href="../Pages/contact.html" class="nav-link">CONTACT</a>
                 <li class="nav-item"></li>
                 <a href="#menu" class="nav-link">LOGIN</a>
->>>>>>> ab9c0e641019b355bd79c3fc586d8e3534c4685d
             </ul>
         </div>
         </div>
@@ -64,16 +47,6 @@
 <!-- boxes-->
 
 <div class="container">
-<<<<<<< HEAD
-    <?php
-
-        require '../functions/listarPlatos.php';
-        listarPlatos(conectar());
-
-    ?>
-</div>
-
-=======
 <?php
 
     require '../functions/functions.php';
@@ -85,7 +58,6 @@
 <section id="breakfast" class="p-5">
     
 </section>
->>>>>>> ab9c0e641019b355bd79c3fc586d8e3534c4685d
 <!--boxes end here-->
 
 <!--Footer-->
