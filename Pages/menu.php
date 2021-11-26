@@ -11,11 +11,16 @@
 </head>
 
 <body>
+
+<?php
+    require_once( './functions/header.php');
+    cabecera();
+?>
     
 <!-- navigation and logo area starts-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1">
         <div class="container">
-            <a href="../index.html" class="navbar-brand"> 
+            <a href="../index.php" class="navbar-brand"> 
                 <img class="img-fluid w-50" src="../images/logo.png" alt=""></a>
     
                 <button 
@@ -30,11 +35,11 @@
         <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"></li>
-                <a href="./about.html" class="nav-link">ABOUT</a>
+                <a href="./about.php" class="nav-link">ABOUT</a>
                 <li class="nav-item"></li>
                 <a href="#menu" class="nav-link">MENU</a>
                 <li class="nav-item"></li>
-                <a href="../Pages/contact.html" class="nav-link">CONTACT</a>
+                <a href="../Pages/contact.php" class="nav-link">CONTACT</a>
             </ul>
         </div>
         </div>
@@ -45,13 +50,12 @@
 <!-- boxes-->
 
 <div class="container">
-<?php
+    <?php
 
-    require '../functions/functions.php';
-    // require '../database/db_conect.php';
-    listarPlatos(conectar());
+        require '../functions/functions.php';
+        listarPlatos(conectar());
 
-?>
+    ?>
 </div>
 <section id="breakfast" class="p-5">
     
