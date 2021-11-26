@@ -1,0 +1,13 @@
+img :before {
+    background: rgba(224, 138, 157, 0.23);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+
+  i {
+      color: rgb(255, 193, 7);
+  }

@@ -1,2 +1,0 @@
-# restaurantePHP
-Trabajo en grupo
