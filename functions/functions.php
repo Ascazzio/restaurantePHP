@@ -6,7 +6,7 @@
 
         //Connect to database
         $mysqli = $conect;
-        $resultado = $mysqli->query("SELECT Plato_id, titulo FROM plato");
+        $resultado = $mysqli->query("SELECT * FROM plato");
 
         while ($reg=$resultado->fetch_assoc()){
             
@@ -19,13 +19,14 @@
                         <div class="col-md p5">
                    
                     <h2>' . $reg['titulo'] . '</h2>
-                    <p class="lead">
-                        Feel like having breakfast under the Eifel Tower. 
+                    <p class="lead">' . 
+                        $reg['descripcion'] . '
                     </p>
+
                     <p>
-                        This morning we will serve simple but very tasteful omelet with bacon and fresh red pepper.   
+                        Para ' . $reg['comensales'] . ' personas 
                     </p>
-                    <a href="#" class="btn btn-secondary mt-5 bt-lg">16 &#8364</a>
+                    <a href="#" class="btn btn-secondary mt-5 bt-lg">' . $reg['precio'] . '&#8364</a>
                 </div>';
 
         };
