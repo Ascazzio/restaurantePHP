@@ -1,7 +1,3 @@
-<h1>
-    Usuario
-</h1>
-
 <?php
 
 require '../database/db_conect.php';
@@ -14,25 +10,29 @@ $reg=$resultado->fetch_assoc();
         cabecera();
 
     echo
-        '<table id="horizontal-form">
-            <tr> 
-                <td>'.$reg['Nombre'].'</td>   
-                <td>'.$reg['Apellidos'].'</td>   
-                <td>'.$reg['Correo'].'</td>   
-                <td><input class="btn btn-sm btn-outline-warning mt-4" type="button" name="editar"value="Editar" onClick=window.location.replace("editarUser.php?id='.$reg['Usuario_ID'].'")></td> 
-            </tr>
+        '<link rel="stylesheet" href="../CSS/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
+        
+        <form class="mt-2 mb-4 p-5" id="form-horizontal">
+            <table class="mt-2 mb-4 p-5" id="horizontal-form">
+                <tr class="col mb-3"> 
+                    <td class="col-sm-3 col-form-label">'.$reg['Nombre'].'</td>   
+                    <td class="col-sm-3 col-form-label">'.$reg['Apellidos'].'</td>   
+                    <td class="col-sm-3 col-form-label">'.$reg['Correo'].'</td>
+                </tr>
+            <td><input class="btn btn-sm btn-outline-warning mt-4" type="button" name="editar"value="Editar" onClick=window.location.replace("editarUser.php?id='.$reg['Usuario_ID'].'")></td> 
         </table>
         <form action="logout.php" method="get">
-            <input  class="btn btn-lg btn-outline-warning mt-4" type="submit" name="logout"value="Logout")>
+            <input  class="btn btn-lg btn-outline-warning mt-4 mb-5" type="submit" name="logout"value="Logout")>
+        </form>
         </form>
         <footer class="p-5 bg-dark text-white text-center position-relative">
         <div class="container">
             <p class="lead">
                 Copyright &copy; 2021 geekshubsacademyrestaurant
             </p>
-            <a href="" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h1"></i>
-            </a>
+           
         </div>
     </footer>';
 ?>

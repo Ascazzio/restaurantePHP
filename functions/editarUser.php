@@ -15,22 +15,37 @@ if (isset($_POST['editar'])) {
     header('location: users.php');
 }
 
+    require_once( '../functions/header.php');
+    cabecera();
+
 echo 
-    '<form action="" method="post">
-        <table>
-            <tr>
-                <td>Nombre: </td>   
-                <td><input type="text" name="nombre" value='.$reg['Nombre'].'></td>
+    '<link rel="stylesheet" href="../CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <form class="mt-2 mb-4 p-5" id="form-horizontal"  action="" method="post">
+        <table class="mt-5">
+            <tr class="col mb-3">
+                <td class="col-sm-3 col-form-label">Nombre: </td>   
+                <td><input class="form-control mt-2" type="text" name="nombre" value='.$reg['Nombre'].'></td>
             </tr>
-            <tr>
-                <td>Apellido: </td>   
-                <td><input type="text" name="apellido" value='.$reg['Apellidos'].'></td>
+            <tr class="col mb-3">
+                <td class="col-sm-3 col-form-label">Apellido: </td>   
+                <td><input class="form-control mt-2" type="text" name="apellido" value='.$reg['Apellidos'].'></td>
             </tr>
-            <tr>
-                <td>Correo: </td>   
-                <td><input type="text" name="correo" value='.$reg['Correo'].'></td>
+            <tr class="col mb-3">
+                <td class="col-sm-3 col-form-label">Correo: </td>   
+                <td><input class="form-control mt-2" type="text" name="correo" value='.$reg['Correo'].'></td>
             </tr>
         </table>
-    <p><input type="submit" name="editar" value="Editar"></p>
-    </form>';
+    <p><input class="btn btn-lg btn-outline-warning mt-4" type="submit" name="editar" value="Editar"></p>
+    </form>
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+        <p class="lead">
+            Copyright &copy; 2021 geekshubsacademyrestaurant
+        </p>
+        
+    </div>
+</footer>';
 ?>
