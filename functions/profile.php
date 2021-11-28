@@ -15,7 +15,7 @@ $reg=$resultado->fetch_assoc();
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
         
         <form class="mt-2 mb-5 p-5" id="form-horizontal">
-            <div class="text-muted" ><h3> Hola '.$reg['Nombre'].'! <br> You can update your information. <h3></div>
+            <div class="text-muted" ><h3> Hola '.$reg['Nombre'].'! <br> You can update information below. <h3></div>
             <table class="mt-3 mb-4 p-5" id="horizontal-form">
                 <tr class="col mb-2 mt-2"> 
                     <td class="col-form-label">'.$reg['Nombre'].'</td> 
