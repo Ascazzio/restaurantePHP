@@ -27,7 +27,9 @@ $reg=$resultado->fetch_assoc();
                     <td class="col-form-label">'.$reg['Correo'].'</td>
                 </tr>
                 
-            <td><input class="btn btn-sm btn-outline-warning mt-4" type="button" name="editar"value="Edit profile" onClick=window.location.replace("editarUser.php?id='.$reg['Usuario_ID'].'")></td> 
+            <td><input class="btn btn-sm btn-outline-warning mt-4" type="button" name="editar" value="Edit profile" onClick=window.location.replace("editarUser.php?id='.$reg['Usuario_ID'].'")></td> 
+            <td><input class="btn btn-sm btn-outline-warning mt-4" type="button" name="todosusuarios" value="All users" onClick=window.location.replace("users.php?id='.$reg['Usuario_ID'].'")></td> 
+            <td><input class="btn btn-sm btn-outline-warning mt-4" type="button" name="todosplatos" value="Todos platos" onClick=window.location.replace("platos.php?id='.$reg['Usuario_ID'].'")></td> 
         </table>
         <form action="logout.php" method="get">
             <input class="btn btn-lg btn-outline-warning mt-4" type="submit" name="logout"value="Logout")>
