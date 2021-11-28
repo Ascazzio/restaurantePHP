@@ -12,47 +12,10 @@
 
 <body>  
     
-<<<<<<< HEAD
 <?php
     require_once( '../functions/header.php');
     cabecera();
 ?>
-=======
-<!-- navigation and logo area starts-->
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1">
-    <div class="container">
-        <a href="../index.html" class="navbar-brand"> 
-            <img class="img-fluid w-50" src="../images/logo.png" alt=""></a>
-
-            <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navmenu">
-            
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-    <div class="collapse navbar-collapse" id="navmenu">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-            <a href="./about.html" class="nav-link">ABOUT</a>
-            </li>
-            <li class="nav-item">
-            <a href="../Pages/menu.html" class="nav-link">MENU</a>
-            </li>
-            <li class="nav-item">
-            <a href="#contact" class="nav-link">CONTACT</a>
-            <li class="nav-item"></li>
-            <a href="#menu" class="nav-link">LOGIN</a>
-            </li>
-        </ul>
-    </div>
-    </div>
-</nav>
-
-<!-- navigation and logo area ends-->
->>>>>>> ab9c0e641019b355bd79c3fc586d8e3534c4685d
 
 <!--Contact form and map starts-->
 <section>

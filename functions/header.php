@@ -7,7 +7,7 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1">
         <div class="container">
             <a href="../index.php" class="navbar-brand"> 
-                <img class="img-fluid w-50" src="./images/logo.png" alt=""></a>
+                <img class="img-fluid w-50" src="../images/logo.png" alt=""></a>
 
                 <button 
                 class="navbar-toggler" 

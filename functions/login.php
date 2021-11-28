@@ -39,19 +39,37 @@ if(isset($_POST['login'])){
     }
 }
 
+
+    require_once( '../functions/header.php');
+    cabecera();
+
+
 echo 
-    '<form action="" method="post">
-        <table>
-            <tr>
-                <td>Correo: </td>   
-                <td><input type="email" name="correo" /></td>
+    '<link rel="stylesheet" href="../CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
+    <form class="mt-3 mb-5 p-5" id="form-horizontal" action="" method="post">
+          <table class="mt-5">
+            <tr class="col mb-3">
+                <td class="col-sm-3 col-form-label"> Correo: </td>   
+                <td><input class="form-control mb-2 mt-2" type="email" name="correo" placeholder="nombre@ejemplo.com *" /></td>
             </tr>
-            <tr>
-                <td>Clave: </td>   
-                <td><input type="password" name="clave" /></td>
+            <tr class="col mb-3">
+                <td class="col-sm-3 col-form-label" >Clave: </td>   
+                <td><input class="form-control mt-2" type="password" name="clave" placeholder="clave *" /></td>
             </tr>
         </table>
-    <p><input type="submit" name="login" value="Login"/></p>
-    </form>';
+    <p><input class="btn btn-lg btn-outline-warning mt-4" type="submit" name="login" value="Login"/></p>
+    </form>
+    
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">
+                Copyright &copy; 2021 geekshubsacademyrestaurant
+            </p>
+           
+        </div>
+    </footer>';
 
 ?>

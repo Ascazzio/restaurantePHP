@@ -12,11 +12,11 @@ img :before {
       color: rgb(255, 193, 7);
   }
 
-  .custom-centered{
-    margin:100% 100%;
-    width:300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-   }
+  #form-horizontal {
+    display:block;
+    width:50%;
+    margin:0 auto;
+  }
+
+  
  
