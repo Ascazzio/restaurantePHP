@@ -18,5 +18,11 @@ img :before {
     margin:0 auto;
   }
 
+  #form-vertical {
+    display:block;
+    width:50%;
+    margin:0 auto;
+  }
+
   
  
