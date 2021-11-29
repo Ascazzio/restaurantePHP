@@ -1,7 +1,16 @@
+
+<style>
+    <?php 
+        include '../CSS/styles.css'    
+    ?>
+</style>
+
 <?php
 
 require '../database/db_conect.php';
 $mysqli = conectar();
+
+//Se almacena el tipo de error para luego mostrarlo al usuario
 $errorMsg = '';
 
 // session_start();
@@ -55,8 +64,8 @@ echo
     <form class="mt-3 mb-5 p-5" id="form-horizontal" action="" method="post">
            <table class="mt-5">
             <tr class="col mb-3">
-                <td class="col-sm-3 col-form-label"> Correo: </td>   
-                <td><input class="form-control mb-2 mt-2" type="email" name="correo" placeholder="nombre@ejemplo.com *" /></td>
+                <td class="col-sm-3 col-form-label">Correo: </td>   
+                <td><input class="form-control mt-2" type="email" name="correo" placeholder="nombre@ejemplo.com *" /></td>
             </tr>
             <tr class="col mb-3">
                 <td class="col-sm-3 col-form-label" >Clave: </td>   
@@ -66,9 +75,9 @@ echo
     <p><input class="btn btn-lg btn-outline-warning mt-4" type="submit" name="login" value="Login"/></p>
     </form>
 
-    <p>' .
+    <div class="errorStyle">' .
        $errorMsg 
-    . '</p>
+ . '</div>
     
     <footer class="p-5 bg-dark text-white text-center position-relative">
         <div class="container">

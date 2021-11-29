@@ -24,4 +24,11 @@ img :before {
     margin:0 auto;
   }
   
+  .errorStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    margin-bottom: 12.8vh;
+  }
  
