@@ -2,6 +2,7 @@
 
 require '../database/db_conect.php';
 $mysqli = conectar();
+$errorMsg = '';
 
 // session_start();
 
@@ -12,14 +13,14 @@ if(isset($_POST['login'])){
     $clave = $_POST['clave'];
 
     if($correo == "" || $clave == ""){ // Validamos que ningún campo quede vacío
-        echo "alert('Error: correo y/o clave vacios!!');"; // Se utiliza Javascript dentro de PHP
+        $errorMsg = "Error: correo y/o clave vacios!"; // Se utiliza Javascript dentro de PHP
     }else{
         // 4. Cadena de SQL
         $sql = "SELECT * FROM usuario WHERE Correo ='$correo' AND Clave='$clave'";
 
         // 5. Ejecuto cadena query()
         if(!$consulta = $mysqli->query($sql)){
-            echo "ERROR: no se pudo ejecutar la consulta!";
+            $errorMsg = "ERROR: no se pudo ejecutar la consulta!";
         }else{
 
             // 6. Cuento registros obtenidos del select. 
@@ -28,7 +29,7 @@ if(isset($_POST['login'])){
 
             // 7. Comparo cantidad de registros encontrados
             if($filas == 0){
-                echo "alert('Error: usuario y/o clave incorrectos!!');";
+                $errorMsg = 'Error: usuario y/o clave incorrectos!!';
             }else{
                 $reg=$consulta->fetch_assoc();
                 header('location: profile.php?id='.$reg['Usuario_ID']); // Si está todo correcto redirigimos a otra página
@@ -64,6 +65,10 @@ echo
         </table>
     <p><input class="btn btn-lg btn-outline-warning mt-4" type="submit" name="login" value="Login"/></p>
     </form>
+
+    <p>' .
+       $errorMsg 
+    . '</p>
     
     <footer class="p-5 bg-dark text-white text-center position-relative">
         <div class="container">
