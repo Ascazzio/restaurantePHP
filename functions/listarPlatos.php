@@ -11,7 +11,7 @@
         function imagePlato($reg) {
             // global $reg;
             if (empty($reg['image'])) {
-                return('../images/Omelet_for_breakfast.jpg');
+                return('../images/noImage.png');
             } else {
                 return ($reg['image']);
             }

@@ -13,8 +13,8 @@
 <body>
 
 <?php
-    require_once( './functions/header.php');
-    cabecera();
+    require './functions/header.php';
+    cabeceraIndex();
 ?>
 
 <!-- showcase area starts-->
