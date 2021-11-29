@@ -31,4 +31,8 @@ img :before {
     color: red;
     margin-bottom: 12.8vh;
   }
+
+  .adminText {
+    color: yellow;
+  }
  

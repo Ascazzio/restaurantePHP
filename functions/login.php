@@ -1,17 +1,10 @@
-
-<style>
-    <?php 
-        include '../CSS/styles.css'    
-    ?>
-</style>
-
 <?php
 
 require '../database/db_conect.php';
 $mysqli = conectar();
 
 //Se almacena el tipo de error para luego mostrarlo al usuario
-$errorMsg = '';
+$errorMsg = '.';
 
 // session_start();
 
@@ -50,8 +43,9 @@ if(isset($_POST['login'])){
 }
 
 
-    require_once( '../functions/header.php');
-    cabecera();
+
+require './header.php';
+cabecera();
 
 
 echo 

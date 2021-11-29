@@ -1,13 +1,14 @@
 <?php
 
 require '../database/db_conect.php';
+require './header.php';
 $mysqli = conectar();
 $resultado = $mysqli->query("SELECT * FROM usuario WHERE Usuario_ID=".$_GET["id"]);
 
 $reg=$resultado->fetch_assoc();
 
         require_once( '../functions/header.php');
-        cabecera();
+        cabeceraAdmin();
 
     echo
         '<link rel="stylesheet" href="../CSS/styles.css">

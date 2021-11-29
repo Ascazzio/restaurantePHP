@@ -1,7 +1,9 @@
 <?php
 
     require '../database/db_conect.php';
+    require './header.php';
     $mysqli = conectar();
+    cabeceraAdmin();
 
     $resultado = $mysqli->query("SELECT * FROM plato WHERE Plato_id=".$_GET["id"]);
     $reg=$resultado->fetch_assoc();
@@ -49,7 +51,7 @@
                 <p class="lead">
                     Copyright &copy; 2021 geekshubsacademyrestaurant
                 </p>
-               
+
             </div>
         </footer>';
 ?>

@@ -1,6 +1,7 @@
 <?php
 
 require '../database/db_conect.php';
+require './header.php';
 $mysqli = conectar();
 
 $titulo = "";
@@ -15,6 +16,8 @@ if (isset($_POST['guardar'])) {
     $resultado = $mysqli->query("INSERT INTO plato (titulo, tipo, comensales) VALUES ('$titulo', '$tipo', '$comensales')"); 
     header('location: index.php');
 }
+
+cabeceraAdmin();
 
 echo 
     '<form action="" method="post">

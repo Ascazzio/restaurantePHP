@@ -13,7 +13,7 @@
     $resultado = $mysqli->query("SELECT Plato_id, titulo FROM plato");
 
     require_once( '../functions/header.php');
-    cabecera();
+    cabeceraAdmin();
 
     //Listado de platos
 
