@@ -18,7 +18,7 @@ if (isset($_POST['editar'])) {
     $correo = $_POST['correo'];
 
     $resultado = $mysqli->query("UPDATE usuario SET Nombre='$nombre', Apellidos='$apellido', Correo='$correo' WHERE Usuario_ID=".$_GET["id"]); 
-    header('location: users.php');
+    header('location: profile.php');
 }
 
     require_once( '../functions/header.php');

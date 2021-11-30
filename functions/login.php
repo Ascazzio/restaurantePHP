@@ -45,7 +45,7 @@ if(isset($_POST['login'])){
 
 
 require './header.php';
-cabecera();
+cabeceraAdmin();
 
 
 echo 
