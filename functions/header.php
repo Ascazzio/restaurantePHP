@@ -67,6 +67,8 @@
                     <a href="./Pages/menu.php" class="nav-link">MENU</a>        
                     <li class="nav-item"></li>
                     <a href="./Pages/contact.php" class="nav-link">CONTACT</a>
+                    <li class="nav-item"></li>
+                    <a href="./functions/login.php" class="nav-link">LOGIN</a>
                 </ul> 
             </div>
         </div>

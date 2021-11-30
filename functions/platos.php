@@ -43,9 +43,7 @@
     echo 
         '<div id="form-horizontal centrar">
             <form action="nuevo.php" method="post">
-                <p><input class="btn btn-lg btn-outline-warning mt-4" type="submit" value="Nuevo plato"/></p>
-            <form action="register.php" method="post">
-                <p><input class="btn btn-lg btn-outline-warning mt-4" type="submit" value="Registrar"/></p> 
+                <p><input class="btn btn-lg btn-outline-warning mt-4" type="button" value="Nuevo plato" onClick=window.location.replace("nuevoPlato.php") /></p>
         </div>
 
         <footer class="p-5 bg-dark text-white text-center position-relative">

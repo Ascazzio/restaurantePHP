@@ -1,9 +1,7 @@
 <?php
-
     require '../database/db_conect.php';
     require './header.php';
     $mysqli = conectar();
-    cabeceraAdmin();
 
     $resultado = $mysqli->query("SELECT * FROM plato WHERE Plato_id=".$_GET["id"]);
     $reg=$resultado->fetch_assoc();
@@ -13,10 +11,11 @@
         $tipo = $_POST['tipo'];
         $comensales = $_POST['comensales'];
         $image = $_POST['image'];
-
         $resultado = $mysqli->query("UPDATE plato SET titulo='$titulo', tipo='$tipo', comensales='$comensales', image='$image' WHERE Plato_id=".$_GET["id"]); 
         header('location: platos.php');
     }
+
+    cabeceraAdmin();
 
     echo 
         '
@@ -24,7 +23,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         
-        <form  class="mt-2 mb-4 p-5" id="form-horizontal" action="" method="post">
+        <form  class="mt-2 mb-4 p-5" id="form-horizontal" method="post">
             <table>
                 <tr>
                     <td class="col-sm-3 col-form-label">Nombre de plato: </td>   
@@ -51,7 +50,6 @@
                 <p class="lead">
                     Copyright &copy; 2021 geekshubsacademyrestaurant
                 </p>
-
             </div>
         </footer>';
 ?>
