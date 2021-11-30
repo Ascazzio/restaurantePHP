@@ -26,7 +26,7 @@
                 
                 <div class="row align-items-center justify-content-between mt-2">
                      <div class="col-md-5 mt-2 mb-2">
-                        <img src="'. imagePlato($reg) .'" class="img-fluid col-md-9" alt="">
+                        <img src="'. imagePlato($reg) .'" class="img-fluid col-md-9 w-75 h-75" alt="">
                     </div>
                         <div class="col-md p4">
                             <h2>' . $reg['titulo'] . '</h2>
