@@ -1,4 +1,3 @@
-<!-- llamamos a CSS -->
 <style>
     <?php 
         include '../CSS/platosAdmin.css'    
