@@ -1,7 +1,6 @@
 
 
 
-<table id="form-horizontal">
 
 <?php
 
@@ -22,18 +21,20 @@
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
                       
             <form class="mb-2 p-2" id="form-horizontal">
-                <tr class=""> 
-                    <td class="col-form-label px-2">'.$reg['Usuario_ID'].'</td>   
-                    <td class="col-form-label px-2">'.$reg['Nombre'].'</td>   
-                    <td class="col-form-label px-2">'.$reg['Apellidos'].'</td>   
-                    <td class="col-form-label px-2">'.$reg['Correo'].'</td>   
-                    <td><input class="btn btn-sm p-2 btn-outline-warning mt-4" type="button" name="editar" value="Editar" onClick=window.location.replace("editarUser.php?id='.$reg['Usuario_ID'].'")>
-                    <td><input class="btn btn-sm p-2 btn-outline-warning mt-4" type="button" name="eliminar" value="Eliminar" onClick=window.location.replace("eliminarUser.php?id='.$reg['Usuario_ID'].'&nombre='.$reg['Nombre'].'")></td>
-                </tr>';
+                <table id="form-horizontal">
+                    <tr class=""> 
+                        <td class="col-form-label px-2">'.$reg['Usuario_ID'].'</td>   
+                        <td class="col-form-label px-2">'.$reg['Nombre'].'</td>   
+                        <td class="col-form-label px-2">'.$reg['Apellidos'].'</td>   
+                        <td class="col-form-label px-2">'.$reg['Correo'].'</td>   
+                        <td><input class="btn btn-sm p-2 btn-outline-warning mt-4" type="button" name="editar"  value="Editar" onClick=window.location.replace("editarUser.php?id='.$reg['Usuario_ID'].'")></td> 
+                        <td><input class="btn btn-sm p-2 btn-outline-warning mt-4" type="button"    name="eliminar" value="Eliminar" onClick=window.location.replace("eliminarUser.php?id='.$reg['Usuario_ID'].'&nombre='.$reg['Nombre'].'")></td>
+                    </tr>
+                </table>
+            </form>';
     }        
 ?>
 
-</table>
 
 <?php
 
