@@ -1,3 +1,9 @@
+<style>
+    <?php 
+        include '../CSS/styles.css'    
+    ?>
+</style>
+
 <?php
 
 require '../database/db_conect.php';
@@ -40,6 +46,7 @@ echo
         </table>
     <p><input class="btn btn-lg btn-outline-warning mt-4" type="submit" name="editar" value="Editar"></p>
     </form>
+    
     <footer class="p-5 bg-dark text-white text-center position-relative">
     <div class="container">
         <p class="lead">
