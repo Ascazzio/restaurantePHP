@@ -11,3 +11,28 @@ img :before {
   i {
       color: rgb(255, 193, 7);
   }
+
+  #form-horizontal {
+    display:block;
+    width:50%;
+    margin:0 auto;
+  }
+
+  #form-vertical {
+    display:block;
+    width:50%;
+    margin:0 auto;
+  }
+  
+  .errorStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    margin-bottom: 12.8vh;
+  }
+
+  .adminText {
+    color: yellow;
+  }
+ 

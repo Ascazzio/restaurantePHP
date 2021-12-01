@@ -1,0 +1,19 @@
+body {
+    background-color: gray;
+}
+
+.plato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid darkgrey 0.1em;
+    border-radius: 0.5em;
+    margin: 0.2em;
+    width: 40em;
+}
+
+.centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
