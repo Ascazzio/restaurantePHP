@@ -1,4 +1,8 @@
 <?php
+ob_start();
+?>
+
+<?php
 
 require '../database/db_conect.php';
 require './header.php';
@@ -44,4 +48,8 @@ $reg=$resultado->fetch_assoc();
            
         </div>
     </footer>';
+?>
+
+<?php
+ob_end_flush();
 ?>

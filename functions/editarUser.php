@@ -1,3 +1,7 @@
+<?php
+ob_start();
+?>
+
 <style>
     <?php 
         include '../CSS/styles.css'    
@@ -18,7 +22,7 @@ if (isset($_POST['editar'])) {
     $correo = $_POST['correo'];
 
     $resultado = $mysqli->query("UPDATE usuario SET Nombre='$nombre', Apellidos='$apellido', Correo='$correo' WHERE Usuario_ID=".$_GET["id"]); 
-    header('location: profile.php');
+    header('location: profile.php?id='.$_GET["id"]);
 }
 
     require_once( '../functions/header.php');
@@ -55,4 +59,8 @@ echo
         
     </div>
 </footer>';
+?>
+
+<?php
+ob_end_flush();
 ?>
