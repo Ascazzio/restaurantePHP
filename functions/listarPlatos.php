@@ -36,6 +36,10 @@
                             <p>
                                 Para ' . $reg['comensales'] . ' personas 
                             </p>
+                            <p>
+                                Ingredientes: ' . $reg['ingredientes'] . ' 
+                            </p>
+                        
                             <a href="#" class="btn btn-secondary mt-5 bt-lg">' . $reg['precio'] . '&#8364</a>
                         </div>
                 </div>';
