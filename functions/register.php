@@ -15,7 +15,7 @@ if (isset($_POST['guardar'])) {
     $clave = $_POST['clave'];
 
     $resultado = $mysqli->query("INSERT INTO usuario (Nombre, Apellidos, Correo, Clave) VALUES ('$nombre', '$apellido', '$correo', '$clave')"); 
-    header('location: users.php');
+    header('location: login.php');
 }
 
 require_once( '../functions/header.php');

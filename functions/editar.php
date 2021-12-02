@@ -1,4 +1,8 @@
 <?php
+ob_start();
+?>
+
+<?php
     require '../database/db_conect.php';
     require './header.php';
     $mysqli = conectar();
@@ -15,7 +19,7 @@
         $ingredientes = $_POST['ingredientes'];
         $image = $_POST['image'];
         $resultado = $mysqli->query("UPDATE plato SET titulo='$titulo', tipo='$tipo', comensales='$comensales', descripcion='$descripcion', precio='$precio', ingredientes='$ingredientes', image='$image' WHERE Plato_id=".$_GET["id"]); 
-        header('location: platos.php');
+        header('location: platos.php?id='.$_GET["id"]);
     }
 
     cabeceraAdmin();
@@ -69,4 +73,8 @@
                 </p>
             </div>
         </footer>';
+?>
+
+<?php
+ob_end_flush();
 ?>

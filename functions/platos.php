@@ -27,7 +27,7 @@
                     <tr class="plato">
                         <td class="col-form-label px-2"><h3 class="text-decoration-none">'.$reg['titulo'].'</h3></td>   
                         <td class="col-form-label px-2"><input class="btn btn-sm px-2 btn-outline-warning" type="button" name="editar" value="Editar" onClick=window.location.replace("editar.php?id='.$reg['Plato_id'].'")></td>  
-                        <td class="col-form-label px-2"><input class="btn btn-sm px-2 btn-outline-warning" type="button" name="eliminar" value="Eliminar" onClick=window.location.replace("eliminar.php?id='.$reg['Plato_id'].'&titulo='.$reg['titulo'].'")></td>
+                        <td class="col-form-label px-2"><input class="btn btn-sm px-2 btn-outline-warning" type="button" name="eliminar" value="Eliminar" onClick=window.location.replace("eliminar.php?id='.$reg['Plato_id'].'")></td>
                     </tr>
                 </table>
                 </form>
