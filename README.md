@@ -11,6 +11,10 @@ https://www.php.net/ <br>
 https://www.mysql.com/ <br>
 https://getbootstrap.com/ <br>
 
+## User's interface / homepage
+
+![Homepage](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Principal_page.jpg)
+
 ## Technical requirements: 
 * Login view, register and the password recovery
 * the complete backoffice template (navbar, menubar and footer...)
