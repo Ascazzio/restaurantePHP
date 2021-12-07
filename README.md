@@ -68,7 +68,8 @@ Eugenio https://github.com/madjek <br>
 Fabrizio https://github.com/Ascazzio <br>
 Lubo https://github.com/Lubo7
 
-The applications was deployed to       .
+The applications was deployed to:
+https://restaurante-lu-fa-eu-bri.herokuapp.com/
 
 
 
