@@ -3,6 +3,8 @@
 This project is a part of Geekshubs academy bootcamp. 
 The goal is to create a monolithic application using PHP8. The main objective is to manage different plates of the menu and their ingredients via the web user's interface. 
 
+
+
 ## Technical requirements: 
 * Login view, register and the password recovery
 * the complete backoffice template (navbar, menubar and footer...)
@@ -40,15 +42,15 @@ The goal is to create a monolithic application using PHP8. The main objective is
 ![Add a new plate](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Add_new_plate.jpg)
 
 * Update plate and ingredients<br>
-![Update plate and ingredients](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Update_plate.jpg)
+![Update plate and ingredients](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Update_plate.jpg)<br>
 
-<br>
-# Collaborators
+## Collaborators
 Bri https://github.com/BriRai <br>
 Eugenio https://github.com/madjek <br>
 Fabrizio https://github.com/Ascazzio <br>
 Lubo https://github.com/Lubo7
 
+The applications was deployed to       .
 
 
 
