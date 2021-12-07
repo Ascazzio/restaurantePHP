@@ -7,9 +7,9 @@ The goal is to create a monolithic application using PHP8. The main objective is
 
 ![Technologies logos](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Technologies_used_PHP_MySQL_Bootstrap.jpg) <br>
 
-https://www.php.net/
-https://www.mysql.com/
-https://getbootstrap.com/
+https://www.php.net/ <br>
+https://www.mysql.com/ <br>
+https://getbootstrap.com/ <br>
 
 ## Technical requirements: 
 * Login view, register and the password recovery
