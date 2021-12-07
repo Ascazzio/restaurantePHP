@@ -11,6 +11,8 @@ https://www.php.net/ <br>
 https://www.mysql.com/ <br>
 https://getbootstrap.com/ <br>
 
+To run and test this application smoothly in your local environment you need to download, install and launch XAMPP. 
+
 ## User's interface / homepage
 
 ![Homepage](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Principal_page.jpg)
