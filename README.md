@@ -19,23 +19,29 @@ The goal is to create a monolithic application using PHP8. The main objective is
 
 ## User / Admin
 * Login <br>
+Only registered users can log in. Only administrators can register a new user.
 ![Login](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Login_Page.jpg)
 
 * LoggedIn user<br>
+The logged user can edit their profile, see all users and/or plates and can logout (either from navbar or from the dedicated button).
 ![LogedIn user](https://github.com/Ascazzio/restaurantePHP/blob/main/images/LogedIn_page.jpg)
 
 * Edit / update the user's credentials<br>
+The user can change his name, surname and/or email. 
 ![Edit user](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Edit_user.jpg)
 
 * Delete user AKA An alert before deleting a user<br>
+Before deleting any user an alert/warning is displayed to ensure that this operation has been triggered.
 ![Alert_before_deleting_a_user](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Alert_before_deleting_user.jpg)
 
 * List of all users <br>
+The admin can register a new user, edit or delete any of current users.
 ![List_of_all_users](https://github.com/Ascazzio/restaurantePHP/blob/main/images/List_all_user_edit_delete_register_login.jpg)
 
 ## Plate
 
 * List of all plates / menu<br>
+The admin can see the list of all plates and their ingredients. They can modify/delete any of these items after when being logged in. 
 ![List of all plates](https://github.com/Ascazzio/restaurantePHP/blob/main/images/List_all_plates.jpg)
 
 * Add a new plate<br>
