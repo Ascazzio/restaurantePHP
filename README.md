@@ -16,9 +16,39 @@ The goal is to create a monolithic application using PHP8. The main objective is
 # Functionalities
 
 ## User / Admin
-* Login
+* Login <br>
+![Login](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Login_Page.jpg)
 
-!(https://github.com/Ascazzio/restaurantePHP/blob/main/images/Login_Page.jpg)
+* LoggedIn user<br>
+![LogedIn user](https://github.com/Ascazzio/restaurantePHP/blob/main/images/LogedIn_page.jpg)
+
+* Edit / update the user's credentials<br>
+![Edit user](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Edit_user.jpg)
+
+* Delete user AKA An alert before deleting a user<br>
+![Alert_before_deleting_a_user](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Alert_before_deleting_user.jpg)
+
+* List of all users <br>
+![List_of_all_users](https://github.com/Ascazzio/restaurantePHP/blob/main/images/List_all_user_edit_delete_register_login.jpg)
+
+## Plate
+
+* List of all plates / menu<br>
+![List of all plates](https://github.com/Ascazzio/restaurantePHP/blob/main/images/List_all_plates.jpg)
+
+* Add a new plate<br>
+![Add a new plate](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Add_new_plate.jpg)
+
+* Update plate and ingredients<br>
+![Update plate and ingredients](https://github.com/Ascazzio/restaurantePHP/blob/main/images/Update_plate.jpg)
+
+<br>
+# Collaborators
+Bri https://github.com/BriRai <br>
+Eugenio https://github.com/madjek <br>
+Fabrizio https://github.com/Ascazzio <br>
+Lubo https://github.com/Lubo7
+
 
 
 
