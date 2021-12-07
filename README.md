@@ -1,4 +1,4 @@
-# Restaurant in PHP
+# Restaurant with PHP, Bootstrap and MySQL
 
 This project is a part of Geekshubs academy bootcamp. 
 The goal is to create a monolithic application using PHP8. The main objective is to manage different plates of the menu and their ingredients via the web user's interface. 
@@ -12,4 +12,15 @@ The goal is to create a monolithic application using PHP8. The main objective is
 * with proper code implementation y its documentation
 * GIT versioning. Every member of the team with their own branch, at least one pull from the main/master branch
 * Readme well defined
+
+# Functionalities
+
+## User / Admin
+* Login
+
+!(https://github.com/Ascazzio/restaurantePHP/blob/main/images/Login_Page.jpg)
+
+
+
+
 
